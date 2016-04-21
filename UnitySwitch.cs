@@ -20,15 +20,14 @@ public class CameraSwitch : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.Keypad2)) {
-			if (MainCamera.enabled == false) {
-				Camera1.enabled = false;
+			if (Camera1.enabled == false) {
+				Camera1.enabled = true;
 				Camera2.enabled = false;
 				Camera3.enabled = false;
 				Camera4.enabled = false;
 				Camera5.enabled = false;
 				Camera6.enabled = false;
 				Camera7.enabled = false;
-				MainCamera.enabled = true;
 			}
 		}
 		if (Input.GetKey (KeyCode.Keypad1)) {
@@ -61,8 +60,8 @@ public class CameraSwitch : MonoBehaviour {
 				
 				Camera1.enabled = false;
 				Camera2.enabled = false;
-				Camera3.enabled = true;
-				Camera4.enabled = false;
+				Camera3.enabled = false;
+				Camera4.enabled = true;
 				Camera5.enabled = false;
 				Camera6.enabled = false;
 				Camera7.enabled = false;
@@ -73,9 +72,9 @@ public class CameraSwitch : MonoBehaviour {
 				
 				Camera1.enabled = false;
 				Camera2.enabled = false;
-				Camera3.enabled = true;
+				Camera3.enabled = false;
 				Camera4.enabled = false;
-				Camera5.enabled = false;
+				Camera5.enabled = true;
 				Camera6.enabled = false;
 				Camera7.enabled = false;
 			}
@@ -85,10 +84,10 @@ public class CameraSwitch : MonoBehaviour {
 				
 				Camera1.enabled = false;
 				Camera2.enabled = false;
-				Camera3.enabled = true;
+				Camera3.enabled = false;
 				Camera4.enabled = false;
 				Camera5.enabled = false;
-				Camera6.enabled = false;
+				Camera6.enabled = true;
 				Camera7.enabled = false;
 			}
 		}
@@ -97,11 +96,11 @@ public class CameraSwitch : MonoBehaviour {
 				
 				Camera1.enabled = false;
 				Camera2.enabled = false;
-				Camera3.enabled = true;
+				Camera4.enabled = false;
 				Camera4.enabled = false;
 				Camera5.enabled = false;
 				Camera6.enabled = false;
-				Camera7.enabled = false;
+				Camera7.enabled = true;
 			}
 		}
 	}
