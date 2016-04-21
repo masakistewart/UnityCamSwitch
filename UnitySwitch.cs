@@ -32,7 +32,6 @@ public class CameraSwitch : MonoBehaviour {
 				Camera5.enabled = false;
 				Camera6.enabled = false;
 				Camera7.enabled = false;
-				MainCamera.enabled = false;
 			}
 		}
 		if (Input.GetKey (KeyCode.Keypad2)) {
